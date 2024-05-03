@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// Defining schema for books. Timestamp will add createdAt and updatedAt
 const bookSchema = mongoose.Schema(
   {
     title: {
@@ -20,4 +21,5 @@ const bookSchema = mongoose.Schema(
   }
 );
 
+// Exporting the book model using mongoose.model
 export const Book = mongoose.model("Book", { bookSchema });
